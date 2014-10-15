@@ -1,0 +1,97 @@
+from earsketch import * 
+
+init() 
+setTempo(120) 
+G1 = HIPHOP_SYNTHPLUCKLEAD_006
+G2 = HIPHOP_TRAPHOP_BEAT_010
+G3 = TECHNO_MAINLOOP_009
+G4 = HOUSE_DEEP_BASS_001
+G5 = TECHNO_ACIDBASS_001
+G6=TECHNO_ACIDBASS_001 
+
+q1= Y09_DRUM_SAMPLE_1
+q2=Y07_KICK
+q3=Y07_SNARE
+q4=Y07_DRUM_SAMPLE
+q5=Y07_CRASH
+q6=Y07_OPEN_HI_HATS
+
+j1 = Y34_SYNTH_HARP_1
+
+k1 = Y27_ELECTRO_2
+k2 = Y37_ELECTRO_4
+k3 = Y39_ELECTRO_2
+
+e1 = ELECTRO_MOTORBASS_002
+e2 =ELECTRO_ANALOGUE_LEAD_001
+e3 =ELECTRO_ANALOGUE_LEAD_011
+e4 =ELECTRO_SFX_WHITENOISE_SCATTER_007
+
+
+
+
+
+drum = Y19_ELECTRO_5
+beat = "0-00-00-0+++0+0+"
+ 
+for measure in range(1, 5):
+    makeBeat(drum, 1, measure, beat)
+	
+for measure in range(5,10):
+    makeBeat(drum, 1, measure, beat)	
+	
+for measure in range(10, 60):
+    makeBeat(drum, 1, measure, beat)	
+
+	
+
+
+	
+
+fitMedia(q1,1,0,15)
+fitMedia(q2,2,0,15)
+fitMedia(q3,3,0,15)
+fitMedia(q4,4,0,15)
+fitMedia(q5,5,0,15)
+fitMedia(q6,6,0,51)
+
+		 
+
+fitMedia(k1, 7,15,25)
+fitMedia(k2, 8,15,25)
+fitMedia(k3, 9,15,25)
+
+fitMedia(e2,11,25, 35)
+fitMedia(e3,12,25, 35)
+fitMedia(e4,13,25,35)
+
+		 
+fitMedia(G1, 14, 35, 40)
+fitMedia(k1, 15, 35, 40)
+fitMedia(e1, 16, 35, 40)
+fitMedia(G2, 17, 35, 40)
+fitMedia(k2, 18, 35, 40)
+fitMedia(e2, 19,35, 40)
+
+fitMedia(e1, 14, 40, 45)
+fitMedia(k1, 15, 40, 45)
+fitMedia(G1, 16, 40, 45)
+fitMedia(e2, 17, 40, 45)
+fitMedia(k2, 18, 40, 45)
+fitMedia(G2, 19,40, 45)
+
+fitMedia(k1,20,45,50)
+fitMedia(k2,21,45,50)
+fitMedia(k3,22,45,50)
+
+fitMedia(q1,23,50,60)
+fitMedia(q2,24,50,60)
+fitMedia(q3,25,50,60)
+fitMedia(q4,26,50,60)
+fitMedia(q5,27,50,60)
+fitMedia(q6,28,50,60)
+
+
+
+finish() 
+
